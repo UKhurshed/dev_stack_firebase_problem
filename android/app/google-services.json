@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442094235644",
+    "project_id": "dev-stack-firebase-problem",
+    "storage_bucket": "dev-stack-firebase-problem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442094235644:android:1cbd579e08465696fd4c79",
+        "android_client_info": {
+          "package_name": "com.example.dev_stack_firebase_problem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442094235644-ovnd8d3gddd60ppj9smdptjuvhifhd0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXgQHiuKAtfaq1135GWh57P5Gp9FyPZrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442094235644-ovnd8d3gddd60ppj9smdptjuvhifhd0u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
