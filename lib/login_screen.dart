@@ -98,12 +98,10 @@ class LoginButton extends StatelessWidget {
 
           firebaseAuth
               .signInWithEmailAndPassword(email: email, password: password)
-              .then((result) => Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) {
-                    return HomeScreen(
-                      uid: result.user!.uid,
-                    );
-                  })));
+              .then((result) => Navigator.pushAndRemoveUntil(context,
+                      MaterialPageRoute(builder: (context) => HomeScreen(
+                        uid: result.user!.uid)
+                      ), (Route<dynamic> route) => false));
         }
       },
       style: style,

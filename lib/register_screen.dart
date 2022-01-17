@@ -83,12 +83,16 @@ class RegisterButton extends StatelessWidget {
       firestoreInstance
           .collection(result.user!.uid)
           .add({'email': email, 'password': password}).then((value) {
-        Navigator.pushReplacement(
+        Navigator.pushAndRemoveUntil(
             context,
             MaterialPageRoute(
-                builder: (context) => HomeScreen(
-                      uid: result.user!.uid,
-                    )));
+                builder: (context) => HomeScreen(uid: result.user!.uid)),
+            ((Route<dynamic> route) => false));
+        // Navigator.pushAndRemoveUntil(
+        //     context,
+        //     MaterialPageRoute(
+        //         builder: (context) => HomeScreen(
+        //               uid: result.user!.uid), (Route<dynamic> route) => false));
       });
     });
   }
