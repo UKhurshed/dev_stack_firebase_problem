@@ -1,22 +1,15 @@
 import 'package:dev_stack_firebase_problem/extensions.dart';
 import 'package:flutter/material.dart';
 
-class EmailTextFormField extends StatefulWidget {
+class EmailTextFormField extends StatelessWidget {
   final TextEditingController controller;
+  const EmailTextFormField({Key? key, required this.controller}) : super(key: key);
 
-  const EmailTextFormField({Key? key, required this.controller})
-      : super(key: key);
-
-  @override
-  _EmailTextFormFieldState createState() => _EmailTextFormFieldState();
-}
-
-class _EmailTextFormFieldState extends State<EmailTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
-      controller: widget.controller,
+      controller: controller,
       validator: (input) => input!.isValidEmail() ? null : 'Check your Email',
       decoration: const InputDecoration(labelText: 'Email'),
     );
