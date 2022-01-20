@@ -1,4 +1,4 @@
-import 'package:dev_stack_firebase_problem/extensions.dart';
+import 'package:dev_stack_firebase_problem/utils/extensions.dart';
 import 'package:flutter/material.dart';
 
 class EmailTextFormField extends StatelessWidget {

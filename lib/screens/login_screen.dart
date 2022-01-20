@@ -1,6 +1,6 @@
-import 'package:dev_stack_firebase_problem/home_screen.dart';
-import 'package:dev_stack_firebase_problem/register_screen.dart';
-import 'package:dev_stack_firebase_problem/widgets.dart';
+import 'package:dev_stack_firebase_problem/screens/home_screen.dart';
+import 'package:dev_stack_firebase_problem/screens/register_screen.dart';
+import 'package:dev_stack_firebase_problem/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
